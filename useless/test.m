@@ -5,8 +5,8 @@
 % I2 = readimage(buildingScene, 2);
 close all;
 clear all;
-I1 = imread('image1086.jpg');
-I2 = imread('image1090.jpg');
+I1 = imread('test_image3\image1086.jpg');
+I2 = imread('test_image3\image1090.jpg');
 size(I1)
 size(I2)
 I1_gray = rgb2gray(I1);

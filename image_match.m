@@ -1,6 +1,9 @@
-function I = image_match(I1,I2,feature_match_threshold,method,edge_flag)
-size(I1);
-size(I2);
+function I = image_match(img,feature_match_threshold,method,edge_flag)
+
+I1 = img.image1;
+I2 = img.image2;
+%size(I1);
+%size(I2);
 I1_gray = rgb2gray(I1);
 I2_gray = rgb2gray(I2);
 

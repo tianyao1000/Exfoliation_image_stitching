@@ -1,8 +1,11 @@
-I1 = imread('image1089.jpg');
-I2 = imread('image1090.jpg');
+close all;
+I1 = imread('test_image3/image1089.jpg');
+I2 = imread('test_image3/image1090.jpg');
 
 I1_gray = rgb2gray(I1);
 I2_gray = rgb2gray(I2);
+figure;
+imshowpair(I1_gray,I2_gray,'method','montage');
 % hp=imhist(I1_gray);
 % hp(1)=0;
 % T=otsuthresh(hp);
@@ -24,15 +27,17 @@ I2_gray = rgb2gray(I2);
 size = 5;
 
 se = strel('square',3);
+figure;
 I1_gray = imerode(I1_gray,se);
 imshow(I1_gray);
 I1_gray = imdilate(I1_gray,se);
+figure;
 imshow(I1_gray);
 I1_gray = imopen(I1_gray,se);
-
+figure;
 imshow(I1_gray)
 I1_gray = imopen(I1_gray,se);
-
+figure;
 imshow(I1_gray);
 I2_gray = imopen(I2_gray,se);
 I1_gray = imopen(I1_gray,se);
@@ -112,4 +117,6 @@ hold off;
 feature_match_threshold = 4;
 method = 'KAZE';
 
-resulting_image = image_match(I1,I2,feature_match_threshold,method,false);
+img.image1 = I1;
+img.image2 = I2;
+resulting_image = image_match(img,feature_match_threshold,method,false);

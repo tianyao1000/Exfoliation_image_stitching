@@ -1,4 +1,5 @@
-im = imread('image1085.jpg');
+folder = 'test_image3';
+im = imread([folder '/image1085.jpg']);
 I = rgb2gray(im);
 I2=edge(I,'canny',0.2);
 imshowpair(I,I2,'montage');
