@@ -1,0 +1,29 @@
+<2018-03-25T00:18:11>
+<00:18:11> **** Stitching: MIST-mist-matlab\test-3 ****
+<00:18:11> PCIAM Computation
+<00:18:11> Source Directory: D:\Dropbox\image stitching\MIST-mist-matlab\MIST-mist-matlab\test\
+<00:18:11> Computing PCIAM
+--->Compute Translations<---
+<00:18:11> Correcting Translations
+<00:18:11> Correcting North Translations
+<00:18:12> Overlap estimate: 7
+<00:18:12> Translation range filer: min=161.04, max=179.34
+<00:18:12> Computed repeatability: 3
+<00:18:12> Correcting West Translations
+<00:18:12> Overlap estimate: 7
+<00:18:12> Translation range filer: min=215.6, max=240.1
+<00:18:12> Computed repeatability: 4
+<00:18:12> Valid Vertical translation found: 13/25
+<00:18:12> Valid Horizontal translation found: 12/25
+<00:18:12> Vertical translation Repeatability: 3
+<00:18:12> Horizontal translation Repeatability: 4
+<00:18:12> Overall translation Repeatability: 9
+<00:18:12>   1/5
+<00:18:12>   2/5
+<00:18:12>   3/5
+<00:18:12>   4/5
+<00:18:12>   5/5
+<00:18:12> Creating global image tile locations using Minimum Spanning Tree
+<00:18:12> Assembling output stitched image
+<00:18:12> Saving output image: img-stitched-3.tif
+<00:18:12> Saving metadata: img-metadata-3.mat
